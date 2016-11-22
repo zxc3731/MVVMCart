@@ -1,0 +1,20 @@
+//
+//  MNShoppingCartViewModel.swift
+//  ManNiu
+//
+//  Created by jiang on 16/10/27.
+//  Copyright © 2016年 网无际. All rights reserved.
+//
+
+import UIKit
+
+class MNShoppingCartViewModel: MNBaseViewModel {
+    weak var vc: MNShoppingCartViewController! {
+        didSet {
+            self.setting(vc)
+        }
+    }
+    func setting(vc: MNShoppingCartViewController) {
+        
+    }
+}

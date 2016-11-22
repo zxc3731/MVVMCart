@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="128" id="KGk-i7-Jjw" customClass="MNShoppingCartCell" customModule="TestCart" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="127.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vw-bt-AqN">
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T47-uh-pmF">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Q8i-9a-ojh">
+                                        <frame key="frameInset" width="90" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdE-Mc-g6E">
+                                                <frame key="frameInset" width="30" height="30"/>
+                                                <state key="normal" title="-"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCi-HY-nJ0">
+                                                <frame key="frameInset" minX="30" width="30" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odx-P7-VRV">
+                                                <frame key="frameInset" minX="60" width="30" height="30"/>
+                                                <state key="normal" title="+"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NUa-Cq-KdQ"/>
+                                    <constraint firstAttribute="width" constant="88" id="QeP-pI-hb9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="T47-uh-pmF" firstAttribute="leading" secondItem="3vw-bt-AqN" secondAttribute="leading" constant="47" id="ZRZ-tc-TZq"/>
+                            <constraint firstItem="T47-uh-pmF" firstAttribute="top" secondItem="3vw-bt-AqN" secondAttribute="top" constant="33" id="lvt-9N-ohz"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeV-LH-85S">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="kEc-DP-aFP"/>
+                            <constraint firstAttribute="width" constant="30" id="nfw-2Q-MTC"/>
+                        </constraints>
+                        <state key="normal" title="S"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="3vw-bt-AqN" secondAttribute="trailing" id="9T0-NM-GF3"/>
+                    <constraint firstItem="ZeV-LH-85S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="41" id="Do7-2X-MUY"/>
+                    <constraint firstItem="ZeV-LH-85S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Oix-kb-8nf"/>
+                    <constraint firstItem="3vw-bt-AqN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gqx-iE-xdl"/>
+                    <constraint firstAttribute="bottom" secondItem="3vw-bt-AqN" secondAttribute="bottom" id="q3O-2O-jZd"/>
+                    <constraint firstItem="3vw-bt-AqN" firstAttribute="leading" secondItem="ZeV-LH-85S" secondAttribute="trailing" constant="2" id="rHg-iN-7jS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="choseButton" destination="ZeV-LH-85S" id="8k6-H2-wMV"/>
+                <outlet property="jiaButton" destination="odx-P7-VRV" id="ze2-Nl-5Mj"/>
+                <outlet property="jianButton" destination="qdE-Mc-g6E" id="PJU-33-rGI"/>
+                <outlet property="numberLabel" destination="pCi-HY-nJ0" id="Qm5-VH-Nko"/>
+                <outlet property="numberView" destination="T47-uh-pmF" id="L3X-FJ-r7e"/>
+            </connections>
+            <point key="canvasLocation" x="52" y="115"/>
+        </tableViewCell>
+    </objects>
+</document>
